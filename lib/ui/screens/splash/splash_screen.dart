@@ -6,7 +6,6 @@ import 'package:flutter/services.dart';
 
 import '../../routers/fluro_navigator.dart';
 
-
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
 
@@ -22,7 +21,7 @@ class _SplashScreenState extends State<SplashScreen> {
     const oneSec = Duration(seconds: 1);
     _timer = Timer.periodic(
       oneSec,
-          (Timer timer) {
+      (Timer timer) {
         if (_start == 0) {
           NavigatorUtils.push(context, RouterGenerator.routeHome);
           setState(() {
@@ -51,7 +50,6 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   Widget build(BuildContext context) {
-    SystemChrome.setEnabledSystemUIOverlays(SystemUiOverlay.values);
     return const Scaffold(
       // appBar: appBarCommonV1(context, strTitle: "Splash"),
       body: Center(

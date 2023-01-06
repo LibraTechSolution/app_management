@@ -1,6 +1,7 @@
 import 'package:shared_preferences/shared_preferences.dart';
 
-import '../../ui/utils/stringapp.dart';
+import '../../ui/screens/widgets/utils/stringapp.dart';
+
 
 
 class AuthUtils {
